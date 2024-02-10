@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Acrobatics Tutoring Calculator";
+}
+
+<h1>Acrobatics Tutoring Calculator</h1>
+
+<label for="hours">Hours Needed:</label>
+<input type="number" id="hours" name="hours" min="1" required>
+
+<label for="rate">Hourly Rate ($):</label>
+<input type="text" id="rate" name="rate" value="50" readonly>
+
+<button id="calculate">Calculate Total</button>
+
+<p>Total: $<span id="total">0.00</span></p>
+
+<nav>
+    <a href="/">Back to Home</a>
+</nav>
+
+@section Scripts {
+    <script src="~/js/calculator.js"></script>
+    <!-- You can include additional script tags here if necessary -->
+}
